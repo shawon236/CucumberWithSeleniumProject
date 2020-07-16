@@ -178,6 +178,7 @@ public class HRMSteps  extends BaseClass{
 
     @Then("User Verify JobTitle {} Exist")
     public void userVerifyJobTitleJobTittleExist(String JobTittle) {
+        logger.info("Verify JobTitle Exist");
         ad.VerifyJobTittle(JobTittle);
     }
 
