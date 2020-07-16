@@ -1,0 +1,6 @@
+utilities\Helper.class
+pageObjects\LoginPage.class
+StepDefinitions\HRMSteps.class
+testRunner\TestRunnerClass.class
+StepDefinitions\BaseClass.class
+pageObjects\AdminPage.class

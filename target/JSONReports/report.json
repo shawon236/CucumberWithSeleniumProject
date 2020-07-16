@@ -1,0 +1,245 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Below are the common steps for every Scenario",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Launch Chrome Browser",
+            "match": {
+              "location": "StepDefinitions.HRMSteps.user_Launch_Chrome_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 656000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Open Orange HRM",
+            "match": {
+              "location": "StepDefinitions.HRMSteps.user_Open_Orange_HRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Enter \"Admin\" As Admin Password As \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.HRMSteps.userEnterAsAdminPasswordAs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1094000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Clicks On Login Button",
+            "match": {
+              "location": "StepDefinitions.HRMSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-16T19:03:30.345Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5847000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.HRMSteps.setup()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "User Able Add User in the System",
+        "description": "",
+        "id": "admin-tan-functionality-test;user-able-add-user-in-the-system",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2029000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User Click On Admin Tab",
+            "match": {
+              "location": "StepDefinitions.HRMSteps.userClickOnAdminTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 332000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User Clicks Add Button",
+            "match": {
+              "location": "StepDefinitions.HRMSteps.userClicksAddButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User Selects User Role ESS",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ESS",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.HRMSteps.userSelectsUserRole(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User Types Employee Name Linda Anderson",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Linda Anderson",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinitions.HRMSteps.userTypesEmployeeName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User Types Username Linda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Linda",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.HRMSteps.userTypesUsername(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User Selects Status Enabled",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enabled",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.HRMSteps.userSelectsStatus(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User Clicks on Save Button",
+            "match": {
+              "location": "StepDefinitions.HRMSteps.userClicksOnSaveButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1175000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User Verify Employee Name Created With Linda Anderson",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Linda Anderson",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitions.HRMSteps.userVerifyEmployeeNameCreated(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 630000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User Close Browser",
+            "match": {
+              "location": "StepDefinitions.HRMSteps.user_Close_Browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Admin Tan Functionality test",
+    "description": "",
+    "id": "admin-tan-functionality-test",
+    "keyword": "Feature",
+    "uri": "file:Features/Admin.feature",
+    "tags": []
+  }
+]
