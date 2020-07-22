@@ -7,6 +7,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import pageObjects.AdminPage;
@@ -39,7 +40,13 @@ public class HRMSteps  extends BaseClass{
             //System.setProperty("webdriver.chrome.driver", projectPath+"//src//test//resources//drivers//chromedriver_win32//chromedriver.exe");
             //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver_win32//chromedriver.exe");
             System.setProperty("webdriver.chrome.driver", configProp.getProperty("chromepath"));
-            driver = new ChromeDriver();
+
+            //for headless execution===================
+            ChromeOptions options = new ChromeOptions();
+            options.setHeadless(true);
+            driver = new ChromeDriver(options);
+
+            //=========================================
         }else if(br.equals("firefox")){
             System.setProperty("webdriver.gecko.driver", configProp.getProperty("firefoxpath"));
             driver = new FirefoxDriver();
