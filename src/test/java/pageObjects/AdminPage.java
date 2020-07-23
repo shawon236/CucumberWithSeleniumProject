@@ -146,6 +146,7 @@ public class AdminPage {
         optionSelect.selectByVisibleText(status);
     }
 
+    //Click on Save button
     public void ClickOnSaveButton(){
         saveButton.click();
     }
