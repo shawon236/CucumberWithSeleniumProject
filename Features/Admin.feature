@@ -7,7 +7,7 @@ Feature: Admin Tan Functionality test
     And User Enter "Admin" As Admin Password As "admin123"
     And User Clicks On Login Button
 
-  @smoke
+  @sanity
   Scenario: User able to find system record search by username
     And User Click On Admin Tab
     And User Sets UserName linda.anderson
@@ -15,7 +15,7 @@ Feature: Admin Tan Functionality test
     Then User Verify UserName linda.anderson displayed
     And User Close Browser
 
-  @Smoke
+  @sanity
   Scenario Outline: User able to verify Job Tittles
     And User Click On Admin Tab
     And User Clicks On Job SubTittle

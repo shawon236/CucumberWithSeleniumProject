@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: testRunner.TestRunnerClass
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.52 s <<< FAILURE! - in testRunner.TestRunnerClass
-User Able Add User in the System(Admin Tan Functionality test)  Time elapsed: 41.119 s  <<< FAILURE!
-java.lang.AssertionError
-
