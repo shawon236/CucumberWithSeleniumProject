@@ -36,6 +36,8 @@ Feature: Admin Tan Functionality test
       And User Types Employee Name Linda Anderson
       And User Types Username Linda
       And User Selects Status Enabled
+      And User Types Password "adminadmin"
+      And User Types Confirm Password "adminadmin"
       Then User Clicks on Save Button
       And User Verify Employee Name Created With Linda Anderson
       And User Close Browser

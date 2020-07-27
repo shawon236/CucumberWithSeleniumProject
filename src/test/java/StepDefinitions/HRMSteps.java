@@ -221,7 +221,7 @@ public class HRMSteps  extends BaseClass{
     }
 
     @Then("User Clicks on Save Button")
-    public void userClicksOnSaveButton() {
+    public void userClicksOnSaveButton() throws InterruptedException {
         ad.ClickOnSaveButton();
     }
 
@@ -231,5 +231,15 @@ public class HRMSteps  extends BaseClass{
         boolean status = ad.verifyAddUserCreated(EmpName1);
         //Assert.assertEquals(true,status);
         Assert.assertTrue(status);
+    }
+
+    @And("User Types Password {}")
+    public void userTypesPassword(String passwordAdmin) {
+        ad.setAdminPassword(passwordAdmin);
+    }
+
+    @And("User Types Confirm Password {}")
+    public void userTypesConfirmPassword(String RetypePassword) {
+        ad.ReTypeAdminPassword(RetypePassword);
     }
 }

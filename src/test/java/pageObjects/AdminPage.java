@@ -82,6 +82,14 @@ public class AdminPage {
     @CacheLookup
     List<WebElement> tableColumns;
 
+    @FindBy(how = How.ID,using = "systemUser_password")
+    @CacheLookup
+    WebElement adminPassword;
+
+    @FindBy(how = How.ID,using = "systemUser_confirmPassword")
+    @CacheLookup
+    WebElement confirmPassword;
+
     //=========================================================================================
 
     public  void clickOnJob(){
@@ -147,7 +155,8 @@ public class AdminPage {
     }
 
     //Click on Save button
-    public void ClickOnSaveButton(){
+    public void ClickOnSaveButton() throws InterruptedException {
+        Thread.sleep(4000);
         saveButton.click();
     }
     public int getNumberOfRows(){
@@ -171,4 +180,12 @@ public class AdminPage {
         return flag;
     }
 
+    public void setAdminPassword(String passwordAdmin){
+        adminPassword.clear();
+        adminPassword.sendKeys(passwordAdmin);
+    }
+    public void ReTypeAdminPassword(String reTypePassword){
+        confirmPassword.clear();
+        confirmPassword.sendKeys(reTypePassword);
+    }
 }
