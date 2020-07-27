@@ -148,7 +148,7 @@ public class AdminPage {
         userName.clear();
         userName.sendKeys(userNam);
     }
-
+    //User select status from list
     public void SelectStatus(String status){
         Select optionSelect = new Select(statusSelect);
         optionSelect.selectByVisibleText(status);
