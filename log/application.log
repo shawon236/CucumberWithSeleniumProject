@@ -382,3 +382,8 @@
 2020-07-27 18:37:40,149 [main] INFO CucumberWithSeleniumProject - ******************** Open Application **************************
 2020-07-27 18:37:43,298 [main] INFO CucumberWithSeleniumProject - ******************** Entering Login Details **************************
 2020-07-27 18:37:52,330 [main] INFO CucumberWithSeleniumProject - ******************** Verifying Records created **************************
+2020-07-27 19:26:30,063 [main] INFO CucumberWithSeleniumProject - Project path is-C:\Users\shawo\IdeaProjects\CucumberWithSeleniumProject
+2020-07-27 19:26:33,754 [main] INFO CucumberWithSeleniumProject - ******************** Launching Browser **************************
+2020-07-27 19:26:35,908 [main] INFO CucumberWithSeleniumProject - ******************** Open Application **************************
+2020-07-27 19:26:39,015 [main] INFO CucumberWithSeleniumProject - ******************** Entering Login Details **************************
+2020-07-27 19:26:47,896 [main] INFO CucumberWithSeleniumProject - ******************** Verifying Records created **************************
